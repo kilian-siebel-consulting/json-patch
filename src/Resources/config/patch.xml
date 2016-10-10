@@ -3,25 +3,25 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <parameters>
-        <parameter key="ibrows_json_patch.value_factory.class">Ibrows\RestBundle\Patch\ValueFactory</parameter>
-        <parameter key="ibrows_json_patch.address_lookup.class">Ibrows\RestBundle\Patch\AddressLookup</parameter>
-        <parameter key="ibrows_json_patch.token_unescaper.class">Ibrows\RestBundle\Patch\TokenEscaper</parameter>
-        <parameter key="ibrows_json_patch.pointer_factory.class">Ibrows\RestBundle\Patch\PointerFactory</parameter>
-        <parameter key="ibrows_json_patch.operation_factory.class">Ibrows\RestBundle\Patch\OperationFactory</parameter>
-        <parameter key="ibrows_json_patch.patch_converter.class">Ibrows\RestBundle\Patch\PatchConverter</parameter>
-        <parameter key="ibrows_json_patch.executioner.class">Ibrows\RestBundle\Patch\Executioner</parameter>
-        <parameter key="ibrows_json_patch.value_converter.jms.class">Ibrows\RestBundle\Patch\JMSValueConverter</parameter>
+        <parameter key="ibrows_json_patch.value_factory.class">Ibrows\JsonPatch\ValueFactory</parameter>
+        <parameter key="ibrows_json_patch.address_lookup.class">Ibrows\JsonPatch\AddressLookup</parameter>
+        <parameter key="ibrows_json_patch.token_unescaper.class">Ibrows\JsonPatch\TokenEscaper</parameter>
+        <parameter key="ibrows_json_patch.pointer_factory.class">Ibrows\JsonPatch\PointerFactory</parameter>
+        <parameter key="ibrows_json_patch.operation_factory.class">Ibrows\JsonPatch\OperationFactory</parameter>
+        <parameter key="ibrows_json_patch.patch_converter.class">Ibrows\JsonPatch\PatchConverter</parameter>
+        <parameter key="ibrows_json_patch.executioner.class">Ibrows\JsonPatch\Executioner</parameter>
+        <parameter key="ibrows_json_patch.value_converter.jms.class">Ibrows\JsonPatch\JMSValueConverter</parameter>
 
-        <parameter key="ibrows_json_patch.operation_applier.add.class">Ibrows\RestBundle\Patch\OperationApplier\Add</parameter>
-        <parameter key="ibrows_json_patch.operation_applier.copy.class">Ibrows\RestBundle\Patch\OperationApplier\Copy</parameter>
-        <parameter key="ibrows_json_patch.operation_applier.move.class">Ibrows\RestBundle\Patch\OperationApplier\Move</parameter>
-        <parameter key="ibrows_json_patch.operation_applier.remove.class">Ibrows\RestBundle\Patch\OperationApplier\Remove</parameter>
-        <parameter key="ibrows_json_patch.operation_applier.replace.class">Ibrows\RestBundle\Patch\OperationApplier\Replace</parameter>
-        <parameter key="ibrows_json_patch.operation_applier.test.class">Ibrows\RestBundle\Patch\OperationApplier\Test</parameter>
+        <parameter key="ibrows_json_patch.operation_applier.add.class">Ibrows\JsonPatch\OperationApplier\Add</parameter>
+        <parameter key="ibrows_json_patch.operation_applier.copy.class">Ibrows\JsonPatch\OperationApplier\Copy</parameter>
+        <parameter key="ibrows_json_patch.operation_applier.move.class">Ibrows\JsonPatch\OperationApplier\Move</parameter>
+        <parameter key="ibrows_json_patch.operation_applier.remove.class">Ibrows\JsonPatch\OperationApplier\Remove</parameter>
+        <parameter key="ibrows_json_patch.operation_applier.replace.class">Ibrows\JsonPatch\OperationApplier\Replace</parameter>
+        <parameter key="ibrows_json_patch.operation_applier.test.class">Ibrows\JsonPatch\OperationApplier\Test</parameter>
 
-        <parameter key="ibrows_json_patch.address_resolver.hash_set.class">Ibrows\RestBundle\Patch\AddressResolver\HashSetAddressResolver</parameter>
-        <parameter key="ibrows_json_patch.address_resolver.list.class">Ibrows\RestBundle\Patch\AddressResolver\ListAddressResolver</parameter>
-        <parameter key="ibrows_json_patch.address_resolver.object.class">Ibrows\RestBundle\Patch\AddressResolver\ObjectAddressResolver</parameter>
+        <parameter key="ibrows_json_patch.address_resolver.hash_set.class">Ibrows\JsonPatch\AddressResolver\HashSetAddressResolver</parameter>
+        <parameter key="ibrows_json_patch.address_resolver.list.class">Ibrows\JsonPatch\AddressResolver\ListAddressResolver</parameter>
+        <parameter key="ibrows_json_patch.address_resolver.object.class">Ibrows\JsonPatch\AddressResolver\ObjectAddressResolver</parameter>
     </parameters>
     <services>
         <service id="ibrows_json_patch.address_resolver.hash_set" class="%ibrows_json_patch.address_resolver.hash_set.class%">

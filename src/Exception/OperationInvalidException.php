@@ -5,7 +5,7 @@ use InvalidArgumentException;
 
 /**
  * Class OperationInvalidException
- * @package Ibrows\RestBundle\Patch\Exception
+ * @package Ibrows\JsonPatch\Exception
  *
  * @codeCoverageIgnore
  *

@@ -6,7 +6,7 @@ use Ibrows\JsonPatch\PointerInterface;
 
 /**
  * Class InvalidPathException
- * @package Ibrows\RestBundle\Patch\Exception
+ * @package Ibrows\JsonPatch\Exception
  *
  * @codeCoverageIgnore
  *

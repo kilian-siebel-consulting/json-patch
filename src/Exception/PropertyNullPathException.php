@@ -7,7 +7,7 @@ use Ibrows\JsonPatch\PointerInterface;
 
 /**
  * Class ResolvePathException
- * @package Ibrows\RestBundle\Patch\Exception
+ * @package Ibrows\JsonPatch\Exception
  *
  * @codeCoverageIgnore
  *

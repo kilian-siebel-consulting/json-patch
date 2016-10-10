@@ -6,7 +6,7 @@ use RuntimeException;
 
 /**
  * Class RootResolveException
- * @package Ibrows\RestBundle\Patch\Exception
+ * @package Ibrows\JsonPatch\Exception
  *
  * @codeCoverageIgnore
  *
