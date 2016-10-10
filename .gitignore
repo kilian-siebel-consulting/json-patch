@@ -1,0 +1,8 @@
+# Bundle Files
+/composer.lock
+/vendor/
+/phpunit.xml
+/coverage/
+
+# IDE Stuff
+/.idea/
